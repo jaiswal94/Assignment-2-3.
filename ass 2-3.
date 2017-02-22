@@ -1,0 +1,15 @@
+Two components of Hadoop 1.x are HDFS and Map reduce .
+
+a).HDFS-HDFS is a Hadoop Distributed FileSystem,which stores bigdata using Commodity Hardware. 
+It is designed to work with Large DataSets and default block size is 64MB .
+It is also divided onto two components:-
+1).NameNode-it is placed in Master Node. It is used to store Meta Data about Data Nodes
+2).DataNode-It is placed in Slave Nodes. It is used to store our Application Actual Data and 
+stores data in Data Slots of size 64MB by default.
+
+b).Map reduce-MapReduce is a Distributed Data Processing or Batch Processing Programming Model which
+process “High Volume of Variety of Data at High Velocity Rate” in a reliable and fault-tolerant manner.
+It is also divide into two components:-
+a)Job Tracker-It is used to assign MapReduce Tasks to Task Trackers in the Cluster of Nodes and  maintains all the Task
+Trackers status like Up/running, Failed, Recovered etc.
+b).Task Tracker-It executes the Tasks which are assigned by Job Tracker and sends the status of those tasks to Job Tracker.
